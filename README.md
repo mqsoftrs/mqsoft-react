@@ -1,28 +1,24 @@
 # mqsoft-react
 
-> Reusable React components by MQSoft
+> Reusable React components by MQ Soft
 
 [![NPM](https://img.shields.io/npm/v/mqsoft-react.svg)](https://www.npmjs.com/package/mqsoft-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save mqsoft-react
+yarn add mqsoft-react
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import 'mqsoft-react/dist/index.css';
+import { ExampleComponent } from 'mqsoft-react';
 
-import MyComponent from 'mqsoft-react'
-import 'mqsoft-react/dist/index.css'
+const App = () => <ExampleComponent text="Imported from mqsoft-react package 😄" />;
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+export default App;
 ```
 
 ## License
